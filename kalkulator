@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Kalkulator</title>
+    <script src="skrypt.js"></script>
+</head>
+<body>
+  <div id="content">
+      <table class="tabela">
+      <colgroup>
+      <col>
+      <col>
+      <col>
+      <col>
+      </colgroup>
+      <thead>
+        <tr> <!--  wyświetlacz . -->
+          <th class="display" colspan="4"><input type="text" id="result"/></th>
+        </tr> 
+      </thead>
+      <tbody>
+        <tr> 
+          <td class="button"><input type="button" value="7" onclick="dis('7')"/></td>
+          <td class="button"><input type="button" value="8" onclick="dis('8')"/></td>
+          <td class="button"><input type="button" value="9" onclick="dis('9')"/></td>
+          <td class="button"><input type="button" value="+" onclick="dis('+')"/></td>
+        </tr>
+        <tr>
+          <td class="button"><input type="button" value="4" onclick="dis('4')"/></td>
+          <td class="button"><input type="button" value="5" onclick="dis('5')"/></td>
+          <td class="button"><input type="button" value="6" onclick="dis('6')"/></td>
+          <td class="button"><input type="button" value="-" onclick="dis('-')"/></td>
+        </tr>
+        <tr>
+          <td class="button"><input type="button" value="1" onclick="dis('1')"/></td>
+          <td class="button"><input type="button" value="2" onclick="dis('2')"/></td>
+          <td class="button"><input type="button" value="3" onclick="dis('3')"/></td>
+          <td class="button"><input type="button" value="*" onclick="dis('*')"/></td>
+        </tr>
+        <tr>
+          <td class="button"><input type="button" id="C" value="C" onclick="cls()"/></td>
+          <td class="button"><input type="button" value="0" onclick="dis('0')"/></td>
+          <td class="button"><input type="button" value="=" onclick="solve()"/></td>
+          <td class="button"><input type="button" value="/" onclick="dis('/')"/></td>
+        </tr>
+      </tbody>
+      </table>
+  </div>
+  <p>
+<a href="http://jigsaw.w3.org/css-validator/check/referer">
+    <img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="Poprawny CSS!" />
+    </a>
+</p>   
+</body>
+</html>
